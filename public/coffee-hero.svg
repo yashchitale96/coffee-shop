@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coffee Cup -->
+  <g filter="url(#shadow)">
+    <!-- Cup Body -->
+    <path d="M160 150 L160 310 Q160 350, 200 350 L300 350 Q340 350, 340 310 L340 150 Z" fill="#f0f0f0" />
+    <!-- Cup Inside -->
+    <path d="M170 160 L170 305 Q170 340, 205 340 L295 340 Q330 340, 330 305 L330 160 Z" fill="#e0e0e0" />
+    <!-- Coffee -->
+    <ellipse cx="250" cy="160" rx="80" ry="20" fill="#6F4E37" />
+    <!-- Cup Handle -->
+    <path d="M340 200 Q390 200, 390 250 Q390 300, 340 300" fill="none" stroke="#f0f0f0" stroke-width="15" stroke-linecap="round" />
+    <!-- Saucer -->
+    <ellipse cx="250" cy="350" rx="120" ry="20" fill="#f0f0f0" />
+    <!-- Steam 1 -->
+    <path d="M230 100 Q240 70, 250 100 Q260 70, 270 100" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.5">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M230 100 Q240 70, 250 100 Q260 70, 270 100;
+                M230 100 Q240 60, 250 90 Q260 60, 270 100;
+                M230 100 Q240 70, 250 100 Q260 70, 270 100" />
+    </path>
+    <!-- Steam 2 -->
+    <path d="M210 120 Q220 90, 230 120" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M210 120 Q220 90, 230 120;
+                M210 120 Q220 80, 230 110;
+                M210 120 Q220 90, 230 120" />
+    </path>
+    <!-- Steam 3 -->
+    <path d="M270 120 Q280 90, 290 120" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3">
+      <animate attributeName="d" dur="3.5s" repeatCount="indefinite" 
+        values="M270 120 Q280 90, 290 120;
+                M270 120 Q280 80, 290 110;
+                M270 120 Q280 90, 290 120" />
+    </path>
+  </g>
+  
+  <!-- Coffee beans -->
+  <g transform="translate(180, 380) rotate(20)">
+    <ellipse cx="0" cy="0" rx="15" ry="10" fill="#5A3921" />
+    <path d="M-8 0 L8 0" stroke="#3E2723" stroke-width="1" />
+  </g>
+  
+  <g transform="translate(320, 390) rotate(-30)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#4E342E" />
+    <path d="M-6 0 L6 0" stroke="#3E2723" stroke-width="1" />
+  </g>
+  
+  <g transform="translate(250, 400) rotate(10)">
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A3921" />
+    <path d="M-7 0 L7 0" stroke="#3E2723" stroke-width="1" />
+  </g>
+  
+  <!-- Shadow Filter -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#6F4E37" flood-opacity="0.3" />
+    </filter>
+  </defs>
+</svg>
